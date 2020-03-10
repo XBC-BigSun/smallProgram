@@ -1,2 +1,5 @@
 <!--pages/home/home.wxml-->
 <text>欢迎使用小程序开发</text>
+
+<view>知识点2</view>
+<view>打tag</view>
