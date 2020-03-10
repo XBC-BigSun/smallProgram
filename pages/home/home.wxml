@@ -1,2 +1,24 @@
 <!--pages/home/home.wxml-->
 <text>欢迎使用小程序开发</text>
+
+<view>这里是知识点1</view>
+<text>
+git版本控制
+首先说一下作用：Git 中的tag指向一次commit的id，通常用来给开发分支做一个标记，如标记一个版本号。
+
+下面就说一下具体的用法：
+
+1.添加标签： git tag -a version -m "note"
+
+注解：git tag 是打标签的命令，-a 是添加标签，其后要跟新标签号，-m 及后面的字符串是对该标签的注释。
+
+2.提交标签到远程仓库 ：git push origin -tags
+注解：就像git push origin master 把本地修改提交到远程仓库一样，-tags可以把本地的打的标签全部提交到远程仓库。
+3.删除标签：git tag -d version
+注解：-d 表示删除，后面跟要删除的tag名字
+4.删除远程标签：git push origin :refs/tags/version
+注解：就像git push origin :branch_1 可以删除远程仓库的分支branch_1一样， 冒号前为空表示删除远程仓库的tag。
+5.查看标签：git tag或者git tag -l
+
+
+</text>
